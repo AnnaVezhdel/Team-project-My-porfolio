@@ -1,13 +1,84 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header-container">
+    <nav class="navigation">
+      <a id="home" href="/team-js-project-portfolio" class="logo">
+        <img
+          src="./img/header/logo-x1.webp"
+          srcset="./img/header/logo.webp 1x, ./img/header/logo-@x2.webp 2x"
+          alt="logo"
+          loading="lazy"
+        />
+        <span>jefferson*</span>
+      </a>
+      <div class="dropdown-menu">
+        <button class="dropbtn hover-animation" aria-label="navigation menu">
+          Menu
+        </button>
+        <ul id="dropdown" class="nav-links-container dropdown-content">
+          <li class="nav-link-item">
+            <a href="#about-me" class="nav-link hover-animation">About me</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#benefits" class="nav-link hover-animation">Benefits</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#projects" class="nav-link hover-animation">Projects</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#faq" class="nav-link hover-animation">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+    </nav>
+    <button
+      class="hamburger-menu-open-button"
+      aria-label="open mobile menu"
+      data-menu-open
+    >
+      <svg class="icon" width="28" height="28">
+        <use href="./img/svg/sprite.svg#icon-burger" />
+      </svg>
+    </button>
+    <a href="#footer" class="header-order-button hover-animation"
+      >Order the project</a
+    >
+  </div>
 </header>
+<!-- Mobile menu -->
+<div class="mobile-menu is-hidden" data-menu>
+  <div class="mobile-menu-container">
+    <button
+      class="mobile-menu-close-button"
+      aria-label="close mobile menu"
+      data-menu-close
+    >
+      <svg class="icon" width="28" height="28" data-menu-close>
+        <use href="./img/svg/sprite.svg#icon-close" data-menu-close />
+      </svg>
+    </button>
+    <nav>
+      <ul class="mobile-menu-nav-links-container">
+        <li class="mobile-menu-nav-link-item">
+          <a href="#about-me" data-menu-close>About me</a>
+        </li>
+        <li class="mobile-menu-nav-link-item">
+          <a href="#benefits" data-menu-close>Benefits</a>
+        </li>
+        <li class="mobile-menu-nav-link-item">
+          <a href="#projects" data-menu-close>Projects</a>
+        </li>
+        <li class="mobile-menu-nav-link-item">
+          <a href="#faq" data-menu-close>FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <a
+      href="#footer"
+      class="header-order-button mobile-menu-order-button"
+      data-menu-close
+    >
+      Order the project
+    </a>
+  </div>
+</div>
