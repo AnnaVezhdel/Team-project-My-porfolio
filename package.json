@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "accordeon": "^1.0.0",
     "accordion-js": "^3.3.4",
     "axios": "^1.7.4",
     "izitoast": "^1.4.0",
